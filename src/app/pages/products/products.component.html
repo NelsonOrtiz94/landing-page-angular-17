@@ -14,10 +14,10 @@
       @for (product of productList; track $index) {
       <tr>
         <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>mdo</td>
-        <td><button type="button" class="btn btn-outline-primary">Details</button></td>
+        <td>{{product.title}}</td>
+        <td>{{product.price | currency}}</td>
+        <td>{{product.description}}</td>
+        <td><button type="button" class="btn btn-outline-primary" (click)="navegate(product.id)">Details</button></td>
       </tr>
       }
     </tbody>
