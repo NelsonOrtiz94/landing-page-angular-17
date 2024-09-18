@@ -1,0 +1,32 @@
+.portada {
+  background-image: url('/assets/image2.jpg'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  height: 91.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000; /* Text color */
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 75px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
