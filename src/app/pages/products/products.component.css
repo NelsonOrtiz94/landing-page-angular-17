@@ -1,8 +1,86 @@
-.back{
+/* Estilos generales */
+.back {
     background-color: black;
-}
-
-h1 {
+    padding: 20px;
+  }
+  
+  h1 {
     color: white;
     margin-left: 1%;
-}
+  }
+  
+  /* Tabla */
+  .products-table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  .table-responsive {
+    overflow-x: auto; /* Permite desplazamiento horizontal en pantallas pequeñas */
+  }
+  
+  .products-table th,
+  .products-table td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 1200px) {
+    .products-table th, .products-table td {
+      font-size: 14px; /* Ajustar el tamaño de la fuente en pantallas grandes */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    h1 {
+      font-size: 24px; /* Reducir el tamaño del título */
+      text-align: center;
+      margin-left: 0;
+    }
+  
+    .products-table th, .products-table td {
+      font-size: 13px; /* Reducir el tamaño de la fuente */
+      padding: 8px; /* Ajustar el padding */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .back {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 20px; /* Ajustar el tamaño del título en móviles */
+    }
+  
+    .products-table th, .products-table td {
+      font-size: 12px; /* Reducir aún más el tamaño de la fuente */
+      padding: 6px;
+    }
+  
+    .products-table th:nth-child(1),
+    .products-table th:nth-child(5),
+    .products-table td:nth-child(1),
+    .products-table td:nth-child(5) {
+      display: none; /* Ocultar la columna de índice y detalles para móviles */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 18px; /* Tamaño más pequeño del título en pantallas pequeñas */
+    }
+  
+    .products-table th, .products-table td {
+      font-size: 11px; /* Reducir el tamaño de la fuente */
+      padding: 5px; /* Reducir el padding */
+    }
+  
+    .products-table th,
+    .products-table td {
+      white-space: nowrap; /* Prevenir que las celdas se dividan en varias líneas */
+    }
+  }
+  

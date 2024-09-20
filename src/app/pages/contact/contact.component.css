@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,7 @@
   height: 91.5vh;
   background-size: cover;
   background-position: center;
+  padding: 10px; /* Para evitar que el contenido quede pegado en pantallas pequeñas */
 }
 
 form {
@@ -21,12 +23,14 @@ form {
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   color: #333;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative; /* Se cambia a relative para pantallas pequeñas */
+  margin: 20px auto; /* Centrar el formulario en pantallas pequeñas */
+  transform: none; /* Eliminar el centramiento absoluto en pantallas pequeñas */
+  top: 0;
+  left: 0;
 }
 
+/* Estilos para las etiquetas y controles */
 .form-label {
   font-weight: bold;
   margin-bottom: 5px;
@@ -52,4 +56,46 @@ form {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  width: 100%; /* Ancho completo en pantallas pequeñas */
+  text-align: center; /* Centrar el texto */
+}
+
+/* Estilos responsivos */
+@media (max-width: 992px) {
+  form {
+    width: 80%; /* Ancho del 80% en pantallas medianas */
+    padding: 15px; /* Ajustar el padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-back {
+    height: auto; /* Ajustar la altura para pantallas pequeñas */
+    padding: 20px; /* Añadir padding */
+  }
+
+  form {
+    width: 90%; /* Ancho del 90% en pantallas pequeñas */
+    padding: 15px;
+    box-shadow: none; /* Eliminar sombra para simplificar en pantallas pequeñas */
+  }
+
+  .form-control {
+    padding: 8px 12px; /* Ajustar el padding de los inputs */
+  }
+
+  .btn-primary {
+    padding: 10px; /* Ajustar el padding del botón */
+  }
+}
+
+@media (max-width: 576px) {
+  form {
+    width: 100%; /* Ancho completo en pantallas muy pequeñas */
+    padding: 10px;
+  }
+
+  .btn-primary {
+    padding: 12px; /* Aumentar el padding del botón */
+  }
 }
