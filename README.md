@@ -1,27 +1,21 @@
-# LandingPageAngular17
+# ANGULAR: Landing page en Angular 17
+[Landing page con angular 17](https://angular-17-landing-page.netlify.app/)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+Este repositorio alberga una aplicación web de tipo landing page, desarrollada con el propósito de explorar y aplicar de manera práctica las nuevas funcionalidades y mejoras introducidas en Angular 17. La aplicación tiene como objetivo servir como un entorno de pruebas y demostración, donde se implementan características avanzadas del framework, tales como optimizaciones en el rendimiento, nuevas directivas, mejoras en la gestión de estado y actualizaciones en el enrutamiento.
 
-## Development server
+## Uso
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1.  Clonar el repositorio haciendo `git clone https://github.com/NelsonOrtiz94/landing-page-angular-17.git`
+2.  Abrr el proyecto en su editor de código
+3.  Instalador de los paquetes y módulos requeridos: `npm install`
+6. Levantar la app haciendo `npm start`
 
-## Code scaffolding
+## Requiere:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+-   **NODE**: Se debe instalar NODE en el sistema operativo
+-   **ANGULAR/CLI**: Para poder manipular el proyecto con la interfaz de Angular
+-   **GIT**: Debe tener Instalado GIT
 
-## Build
+## Acerca de este proyecto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+El proyecto está diseñado para desarrolladores interesados en familiarizarse con las últimas capacidades de Angular 17, proporcionando ejemplos prácticos y casos de uso reales que permiten comprender y dominar las nuevas herramientas y técnicas que ofrece esta versión. Además, la aplicación sigue las mejores prácticas de desarrollo, garantizando un código limpio, modular y escalable, ideal para su reutilización y adaptación en proyectos más complejos.
