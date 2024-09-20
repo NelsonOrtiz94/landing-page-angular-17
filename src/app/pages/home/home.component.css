@@ -1,13 +1,14 @@
+/* Estilos generales para la sección de portada */
 .portada {
-  background-image: url('/assets/image2.jpg'); /* Replace with your background image */
+  background-image: url('/assets/image2.jpg'); /* Reemplazar con la imagen de fondo */
   background-size: cover;
   background-position: center;
   height: 91.5vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000000; /* Text color */
-  padding: 0 15px; /* Para evitar que el contenido quede pegado a los bordes en pantallas pequeñas */
+  color: #000000; /* Color del texto */
+  padding: 0 15px; /* Evitar que el contenido quede pegado a los bordes */
 }
 
 .container {
@@ -15,6 +16,7 @@
   padding: 20px;
 }
 
+/* Estilos para los encabezados */
 h1 {
   font-size: 75px;
   font-weight: bold;
@@ -25,6 +27,7 @@ h2 {
   margin-bottom: 20px;
 }
 
+/* Estilos para imágenes dentro de la sección */
 img {
   max-width: 100%;
   height: auto;
@@ -72,16 +75,17 @@ img {
 
 @media (max-width: 576px) {
   .portada {
-    height: 60vh; /* Ajustar la altura en pantallas pequeñas */
+    height: 50vh; /* Reducir la altura en pantallas pequeñas */
     padding: 0 10px; /* Aumentar el padding en pantallas pequeñas */
   }
   
   h1 {
-    font-size: 30px;
+    font-size: 30px; /* Reducir el tamaño del texto principal */
   }
   
   h2 {
-    font-size: 25px;
+    font-size: 20px; /* Reducir el tamaño del subtítulo */
+    margin-bottom: 10px; /* Reducir el margen inferior */
   }
   
   .container {
